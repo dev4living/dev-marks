@@ -1,0 +1,82 @@
+/**
+ * less style
+ */
+
+
+//
+// Header
+// ------------------------------
+header {
+    height: 60px;
+}
+
+
+
+//
+// MainBody
+// ------------------------------
+#nav {
+    position: static;
+    #logo {
+        margin-bottom: 1em;
+        font-size: 20px;
+        .logo {
+            font-size: 40px;
+            color: #8bf;
+        }
+        .one {
+            color: #1b6ae6;
+        }
+        .two {
+            color: #db493b;
+        }
+        .three {
+            color: #feb82c;
+        }
+        .four {
+            color: #2777ed;
+        }
+        .five {
+            color: #169c5b;
+        }
+        .six {
+            color: #de5042;
+        }
+
+        .slogan {
+            display: none;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+//
+// header
+// ------------------------------
+.header {
+    // 
+    .head-link {
+        margin-top: 7px;
+        a {
+            line-height: 20px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+
+    // 面包屑导航
+    .breadcrumb {
+        margin-top: 10px;
+    }
+}
+
+
+
+//
+// Disqus
+// ------------------------------
+#disqus_thread {
+    margin-top: 30px;
+}

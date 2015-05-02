@@ -1,0 +1,10 @@
+.*.swp
+.*.swo
+._*
+.DS_Store
+.svn/
+config.rb
+_site/
+/_site/
+_site/
+_site

@@ -1,0 +1,25 @@
+---
+layout: default
+title: list
+keywords: ruby
+description: ruby
+
+permalink: /ruby/
+categories: ruby
+---
+<!-- PostList -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="">Title</th>
+            <th style="width:200px">Tags</th>
+            <th style="width:140px">Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in site.categories['ruby'] %}
+            {% include post-item.html %}
+        {% endfor %}
+    </tbody>
+</table>
+

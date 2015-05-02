@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>#Dev4iving - {{ site.name }} &nbsp; | &nbsp;&nbsp; {{ page.title }} &nbsp;</title>
+<meta charset="utf-8">
+<meta title="keywords" content="{{ page.keywords }}">
+<meta title="description" content="{{ page.description }}">
+<link rel="stylesheet" href="{{ site.url }}/assets/style/bootstrap.min.css">
+<link rel="stylesheet/less" href="{{ site.url }}/assets/style/style.less.css">
+<script rel="javascript/text" src="{{ site.url }}/assets/script/jquery-1.8.3.min.js"></script>
+<script rel="javascript/text" src="{{ site.url }}/assets/script/bootstrap.min.js"></script>
+<script rel="javascript/text" src="{{ site.url }}/assets/script/less-1.7.1.min.js"></script>
+<script rel="javascript/text" src="{{ site.url }}/assets/script/script.js"></script>
+</head>
+
+<body>
+<header></header>
+
+<!-- MainBody -->
+<div class="container">
+    <div class="row">
+        <!-- Nav -->
+        <div id="nav" class="col-sm-2">
+            {% include nav.html %}
+        </div>
+
+        <!-- Content -->
+        <div class="col-sm-10">
+            <!-- Header -->
+            {% include header.html %}
+
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+{% include footer.html %}
+</body>
+</html>

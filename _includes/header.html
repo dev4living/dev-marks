@@ -1,0 +1,34 @@
+<div class="header">
+    <div class="pull-right head-link">
+        <a href="https://dev4living.slack.com" target="_blank">
+            <i class="glyphicon glyphicon-comment"></i>
+            Slack
+        </a>
+        <a href="https://github.com/dev4living/dev-marks" target="_blank">
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+            Fork
+        </a>
+    </div>
+
+    <form action="https://www.google.com" class="form-inline">
+        <div class="form-group" style="width:30%; min-width:120px">
+            <div class="input-group">
+                <input class="form-control" type="text" name="q">
+                <div class="input-group-btn">
+                    <input class="btn btn-default" type="submit" value="Search">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+        <li><a href="/">DevMarks</a></li>
+        {% if (page.categories) %}
+            <li><a href="/{{ page.categories }}">{{ page.categories }}</a></li>
+        {% endif %}
+        <li class="active">{{ page.title }}</li>
+    </ol>
+
+</div>
+

@@ -1,0 +1,42 @@
+<!-- Logo -->
+<div id="logo">
+    <span class="glyphicon glyphicon-bookmark logo"></span>
+    <!-- DevMarks -->
+    <span class="one">D</span><span class="two">e</span><span class="three">v</span>
+    <span class="four">M</span><span class="five">ark</span><span class="six">s</span>
+    <div class="slogan">Read Merry Manual</div>
+</div>
+
+<ul class="nav nav-pills nav-stacked">
+    <li class="{% if page.categories == null %}active{% endif %}">
+        <a href="/">Home</a>
+    </li>
+
+    <li class="{% if page.categories.first == 'unix-like' or page.categories == 'unix-like' %}active{% endif %}">
+        <a href="/unix-like">Unix Like</a>
+    </li>
+
+    <li class="{% if page.categories.first == 'php' or page.categories == 'php' %}active{% endif %}">
+        <a href="/php">PHP</a>
+    </li>
+
+    <li class="{%  if page.categories.first == 'html+css+js' or page.categories == 'html+css+js' %}active{% endif %}">
+        <a href="/HTML+CSS+JS">HTML+CSS+JS</a>
+    </li>
+
+    <li class="{% if page.categories.first == 'ruby' or page.categories == 'ruby' %}active{% endif %}">
+        <a href="/ruby">Ruby</a>
+    </li>
+
+    <li class="{% if page.categories.first == 'java' or page.categories == 'java' %}active{% endif %}">
+        <a href="/java">Java</a>
+    </li>
+
+    <li class="{% if page.categories.first == 'web-develop' or page.categories == 'web-develop' %}active{% endif %}">
+        <a href="/web-develop">Web Develop</a>
+    </li>
+
+    <li class="{% if page.categories.first == 'app-develop' or page.categories == 'app-develop' %}active{% endif %}">
+        <a href="/app-develop">App Develop</a>
+    </li>
+</ul> 

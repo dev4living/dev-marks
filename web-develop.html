@@ -1,0 +1,25 @@
+---
+layout: default
+title: list
+keywords: web-develop
+description: web-develop
+
+permalink: /web-develop/
+categories: web-develop
+---
+<!-- PostList -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="">Title</th>
+            <th style="width:200px">Tags</th>
+            <th style="width:140px">Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in site.categories['web-develop'] %}
+            {% include post-item.html %}
+        {% endfor %}
+    </tbody>
+</table>
+

@@ -1,0 +1,25 @@
+---
+layout: default
+title: list
+keywords: unix-like
+description: unix like
+
+permalink: /unix-like/
+categories: unix-like
+---
+<!-- PostList -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="">Title</th>
+            <th style="width:200px">Tags</th>
+            <th style="width:140px">Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in site.categories['unix-like'] %}
+            {% include post-item.html %}
+        {% endfor %}
+    </tbody>
+</table>
+
