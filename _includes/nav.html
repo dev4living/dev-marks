@@ -1,5 +1,11 @@
 <!-- Logo -->
 <div id="logo">
+    <div class="pull-right dropdown visible-xs">
+        <button class="btn btn-default">
+            <i class=" glyphicon glyphicon-align-justify"></i>
+        </button>
+    </div>
+
     <span class="glyphicon glyphicon-bookmark logo"></span>
     <!-- DevMarks -->
     <span class="one">D</span><span class="two">e</span><span class="three">v</span>
@@ -40,3 +46,13 @@
         <a href="/app-develop">App Develop</a>
     </li>
 </ul> 
+
+<script>
+$('.dropdown .btn').toggle(function() {
+    $('#nav .nav').fadeIn();
+    $(this).addClass('grey');
+}, function() {
+    $('#nav .nav').fadeOut();
+    $(this).removeClass('grey');
+});
+</script>

@@ -8,6 +8,10 @@
 // ------------------------------
 header {
     height: 60px;
+
+    @media (max-width:767px) {
+        height: 20px;
+    }
 }
 
 
@@ -18,7 +22,8 @@ header {
 #nav {
     position: static;
     #logo {
-        margin-bottom: 1em;
+        white-space: nowrap;
+        margin-bottom: 10px;
         font-size: 20px;
         .logo {
             font-size: 40px;
@@ -46,6 +51,28 @@ header {
         .slogan {
             display: none;
             font-size: 14px;
+        }
+
+        .dropdown {
+            margin-top: 6px;
+            .grey {
+                background-color: #ddd;
+            }
+        }
+    }
+
+    .nav {
+        @media (max-width:767px) {
+            display: none;
+            position: absolute;
+            top: 66px;
+            right: 15px;
+            background-color: #fff;
+            z-index: 999;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 15px;
+            border-radius: 8px 0 0 8px;
         }
     }
 }
